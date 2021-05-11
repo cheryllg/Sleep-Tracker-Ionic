@@ -1,0 +1,48 @@
+<ion-header [translucent]="true">
+  <ion-toolbar style="--background: rgb(9, 18, 33)">
+    <ion-title>
+      Overnight Sleep History
+    </ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <h3 style="margin-left: 20px"> Recent Logs</h3>
+  <div class="slides ion-margin-bottom">
+    <ion-slides [options]="options">
+      <ion-slide *ngFor="let data of sleepArray">
+        <!-- Sleep -->
+        <ion-card> 
+            <ion-card-content class="ion-text-left">
+            <ion-icon name="calendar-outline"></ion-icon>
+              <ion-text> {{data.dateString()}}</ion-text>
+            <br>
+            <ion-icon name="time-outline"></ion-icon>
+            <ion-text> {{data.startTime()}} to {{data.endTime()}}</ion-text>
+            <br>
+              <ion-icon name="hourglass-outline"></ion-icon>
+            <ion-text> {{data.summaryString()}} </ion-text>
+          </ion-card-content>
+        </ion-card>
+        <!-- Sleepiness -->
+      </ion-slide>
+    </ion-slides>
+  </div>
+
+  <h3 style="margin-left: 20px"> More Insight</h3>
+  <div class="insight" size="5"> 
+        <span> Total logs: {{ sleepArray.length }} </span>
+        <br>
+        <span> Average Time: {{ averageHours }} </span>
+  </div>
+  <ion-card class="welcome-card">
+    <ion-card-content>
+      <canvas #sleepChart></canvas>
+    </ion-card-content>
+  </ion-card>
+  
+</ion-content>

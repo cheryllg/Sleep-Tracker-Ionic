@@ -1,0 +1,47 @@
+<ion-header [translucent]="true">
+  <ion-toolbar style="--background: rgb(9, 18, 33)">
+    <ion-title>
+      Sleep Tracker
+    </ion-title>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content> 
+
+  <div class="image-container">
+    <img src="../assets/mountains.png">
+    <div class="top-left"> {{ currentTime }} </div>
+  </div>
+
+  <div class="option-section">
+    <ion-row class="option-container" (click)="toSleepPage()" size="5">
+        <span style="size: 10px; font-weight: bold;">
+          <ion-icon style="margin-bottom: -2px; margin-right: 3px;" name="bed-outline"></ion-icon>
+          Log Overnight Sleep 
+        </span>
+    </ion-row>
+
+    <ion-row class="option-container" (click)="toSleepinessPage()" size="5"> 
+        <span style="size: 10px; font-weight: bold;">
+          <ion-icon style="margin-bottom: -2px; margin-right: 3px;" name="moon-outline"></ion-icon>
+        Log Sleepiness
+      </span>
+    </ion-row>
+
+    <ion-row class="option-container" (click)="toHistoryPage()"size="5"> 
+        <span style="size: 10px; font-weight: bold;">
+        <ion-icon style="margin-bottom: -2px; margin-right: 3px;" name="archive-outline"></ion-icon>
+        Overnight Sleep History
+      </span>
+    </ion-row>
+
+    <ion-row class="option-container" (click)="toHistory2Page()"size="5"> 
+        <span style="size: 10px; font-weight: bold;">
+        <ion-icon style="margin-bottom: -2px; margin-right: 3px;" name="archive-outline"></ion-icon>
+        Sleepiness History
+      </span>
+    </ion-row>
+  </div>
+
+</ion-content>

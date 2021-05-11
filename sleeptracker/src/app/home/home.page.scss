@@ -1,0 +1,101 @@
+#container {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #8c8c8c;
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+.option-container {
+    background: rgba(0,9,26,1);
+    //background-image: linear-gradient(to left, rgba(99,156,195,1), rgba(6,25,57,1));
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px;
+    size: 13px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+    border: 0.1px solid white;
+  }
+
+.option-section {
+  margin-top: -20px;
+}
+ion-content{
+  --ion-background-color: rgb(9, 18, 33);
+    ion-card {
+      width: 100%;
+      box-shadow: none;
+      border-radius: 14px;
+      padding: 5px;
+      color: black;
+      background: white;
+    }
+}
+
+.toolbar-styling {
+  --ion-background-color: rgb(6, 15, 55);
+}
+
+.option-row {
+  background: black;
+  padding: 25px;
+  margin: 10px 10px;
+  border-radius: 14px;
+}
+
+
+.options-container {
+  //background: rgba(255,255,255,1);
+  padding: 40px 20px;
+  border-radius: 0px 0px 0px 45px;
+  p {
+    size: 1em;
+  }
+  margin-top: -40px;
+}
+
+.options-img {
+  border-radius: 14px;
+  size: 50%;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+.ion-col-left{
+     margin-left: -5px;
+}
+
+.ion-col-right{
+     margin-left: 5px;
+}
+
+.image-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.top-left {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-weight: bold;
+  font-size: 20px;
+}
