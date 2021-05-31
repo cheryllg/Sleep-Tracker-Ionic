@@ -3,7 +3,7 @@
 - Built using Ionic. 
 - Tracks overnight sleep and sleepiness levels during the day
 
-How to Run: 
+**How to Run:** 
 1. Install the Ionic CLI globally
 ```
 npm install -g @ionic/cli
